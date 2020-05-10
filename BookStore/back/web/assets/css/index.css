@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?a0f33i');
+  src:  url('../fonts/icomoon.eot?a0f33i#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?a0f33i') format('truetype'),
+    url('../fonts/icomoon.woff?a0f33i') format('woff'),
+    url('../fonts/icomoon.svg?a0f33i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.container {
+  margin-top: 30px;
+}
+.page {
+  width: 100%;
+  text-align: center;
+}
+.book {
+  display: none;
+}
+.userlist {
+  display: none;
+  height: 250px;
+}
+.booklist {
+  display: none;
+  height: 500px;
+}
+.updatebook {
+  display: none;
+  height: 500px;
+}
+.updatebook .submit-box {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 30px auto 0;
+}
+.updatebook .submit-box a {
+  text-decoration: none;
+}
+.updatebook .submit-box a input {
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #86ce2f;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.add {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  font-size: 16px;
+  background-color: skyblue;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+.close{
+  position: absolute;
+  top:5px;
+  right: 5px;
+  font-family: 'icomoon';
+  font-size: 14px;
+  font-weight: normal;
+}
+.add .add-input {
+  margin: 10px auto;
+  width: 300px;
+  height: 50px;
+  line-height: 30px;
+}
+.add .add-input label {
+  width: 60px;
+  height: 30px;
+  text-align: right;
+}
+.add .add-input input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.add .add-input input:focus {
+  border-color: #70887d;
+}
+.add .add-submit {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 30px auto 0;
+  border-radius: 5px;
+}
+.add .add-submit a {
+  display: block;
+  text-decoration: none;
+}
+.add .add-submit a input {
+  width: 250px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #86ce2f;
+  cursor: pointer;
+}
+.order {
+  display: none;
+}
+.order-info{
+  display: none;
+}
+.close-info {
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  font-family: 'icomoon';
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.close-info:hover {
+  color: #fff;
+  background-color: orange;
+}

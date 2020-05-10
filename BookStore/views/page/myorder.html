@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单</title>
+    <link rel="stylesheet" href="../../static/css/base.min.css">
+    <link rel="stylesheet" href="../../static/css/myorder.min.css">
+    <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 顶部模块 -->
+    <div class="top-wrapper">
+        <div class="top w">
+            <ul class="right-nav">
+                <li><a href="http://29759g4o70.imdo.co:14533/index">首页</a></li>
+                <li class="welcome"></li>
+                <li><a href="javascript:;">我的订单</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 订单列表 -->
+    <div class="order-list w">
+        <div class="container ">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>订单号</th>
+                        <th>订单日期</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                        <th>详情</th>
+                    </tr>
+                </thead>
+                <tbody id="tbd">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 订单详情 -->
+    <div class="order-info w">
+        <div class="close-info"></div>
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>数量</th>
+                        <th>价格</th>
+                        <th>金额</th>
+                    </tr>
+                </thead>
+                <tbody id="detail">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+<script src="../../static/js/jquery.min.js"></script>
+<script src="../../static/js/myorder.min.js"></script>
+<script>
+    function detail(id) {
+        $(".order-list").css("display", "none");
+        $(".order-info").css("display", "block");
+        $(".bg").css("display", "block");
+
+        $.ajax({
+            type: "post",
+            url: "http://29759g4o70.imdo.co:14533/v1/order/MyOrderInfo",
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify({ order_id: id }),
+            dataType: "json",
+            success: function (resp) {
+                console.log(resp);
+                var html = [];
+                for (var i = 0; i < resp.items.length; i++) {
+                    html.push(
+                        `<tr>
+                        <td>《${resp.items[i].title}》</td>
+                        <td>${resp.items[i].author}</td>
+                        <td>${resp.items[i].count}</td>
+                        <td>￥${resp.items[i].price}</td>
+                        <td>￥${resp.items[i].amount}</td>
+                    </tr>`)
+                }
+                $("#detail").html(html.join(''));
+            },
+            error: function (resp) {
+                // console.log(resp);
+            }
+        });
+    }
+</script>
+
+</html>

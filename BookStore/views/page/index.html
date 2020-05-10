@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书商城</title>
+    <link rel="stylesheet" href="../../static/css/base.min.css">
+    <link rel="stylesheet" href="../../static/css/index.min.css">
+    <link rel="stylesheet" href="../../static/layui/css/layui.css" media="all">
+</head>
+
+<body>
+    <!-- 顶部模块 -->
+    <div class="top-wrapper">
+        <div class="top w">
+            <ul class="left-nav">
+                <li><a href="javascript:;">小说</a></li>
+                <li><a href="javascript:;">文学</a></li>
+                <li><a href="javascript:;">青春文学</a></li>
+                <li><a href="javascript:;">成功励志</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="javascript:;">首页</a></li>
+                <li class="login"><a href="javascript:;">登录</a></li>
+                <li class="register"><a href="javascript:;">注册</a></li>
+                <li class="cart"><a href="javascript:;"><i class="shopcart"></i>购物车</a></li>
+                <li class="welcome"><a href="javascript:;"></a></li>
+                <li class="mycart">
+                    <a href="http://29759g4o70.imdo.co:14533/v1/shop/cart">
+                        <i class="shopcart"></i>
+                        <span>我的购物车(<i class="shopcart">0</i>)</span>
+                    </a>
+                </li>
+                <li class="myorder"><a href="http://29759g4o70.imdo.co:14533/v1/order/">我的订单</a></li>
+                <li class="logout"><a href="javascript:;">注销</a></li>
+            </ul>
+        </div>
+        <div class="login-box">
+            <div class="login-title">
+                <a href="javascript:;">登录</a>
+                <i class="log"></i>
+            </div>
+            <p class="tip"><i></i></p>
+            <!--
+            <form action="/v1/login/user" method="post" target="nm_iframe" required="required">
+            -->
+            <div class="login-input">
+                <label for="u" class="user">请输入用户名/邮箱</label>
+                <input type="text" id="u">
+            </div>
+            <div class="login-input">
+                <label for="p" class="pass">请输入密码</label>
+                <input type="password" id="p">
+            </div>
+            <div class="login-submit">
+                <a href="javascript:;">
+                    <input type="submit" name="" id="logsub" value="登 录">
+                </a>
+            </div>
+            <!-- </form>  -->
+            <div class="help">
+                <a href="javascript:;" class="forget">忘记密码？</a>
+                <span></span>
+                <a href="javascript:;" class="newuser">新用户注册</a>
+            </div>
+        </div>
+        <div class="register-box">
+            <div class="register-title">
+                <a href="javascript:;">注册</a>
+                <i class="reg"></i>
+            </div>
+            <!-- <form action=""> -->
+            <div class="register-input">
+                <label for="username" class="u">请输入用户名</label>
+                <input type="text" id="username" name="username">
+                <p class="format">6~10位数字和字母组成(字母开头)</p>
+            </div>
+            <div class="register-input">
+                <label for="email" class="e">请输入邮箱</label>
+                <input type="email" id="email" name="email">
+                <p class="format">xxx@xxx.com</p>
+            </div>
+            <div class="register-input">
+                <label for="password" class="p">请输入密码</label>
+                <input type="password" id="password" name="password">
+                <p class="format">6~10位数字组成</p>
+            </div>
+            <div class="register-input">
+                <label for="confirm" class="c">确认密码</label>
+                <input type="password" id="confirm" name="confirm">
+                <p class="format"></p>
+            </div>
+            <div class="register-submit">
+                <a href="javascript:;">
+                    <input type="submit" value="立即注册" id="regsub">
+                </a>
+            </div>
+            <!-- </form> -->
+        </div>
+        <!-- 背景遮罩层 -->
+        <div class="bg"></div>
+    </div>
+    <!-- 商品列表分页模块 -->
+    <div class="shop-wrapper">
+        <div class="shoplist w">
+            <ul class="clearfix" id="book">
+
+            </ul>
+            <div id="page"></div>
+        </div>
+    </div>
+    <div class="copyright w">
+        dxb图书商城Copyright&nbsp;&copy;2020
+    </div>
+</body>
+<script src="../../static/js/jquery.min.js"></script>
+<script src="../../static/layui/layui.all.js" charset="utf-8"></script>
+<script src="../../static/js/logreg.min.js"></script>
+<script src="../../static/js/index.min.js"></script>
+<script>
+    var num = 0;
+    //添加商品
+    function buy(id) {
+        //判断用户是否已登录
+        var uname = sessionStorage.getItem("uname");
+        if (uname != null) {
+            num++;
+            $.ajax({
+                type: "post",
+                url: "http://29759g4o70.imdo.co:14533/v1/shop/AddBookToCart",
+                contentType: "application/json;charset=utf-8",
+                data: JSON.stringify({ book_id: parseInt(id), user_name: uname }),
+                dataType: "json",
+                success: function (resp) {
+                    // console.log(resp);
+                    $(".mycart").find("span").html("我的购物车(<i class='shopcart'>"+num+"</i>)");
+                },
+                error: function (resp) {
+                    // console.log(resp);
+                }
+            });
+        } else {
+            $(".login-box").css("display", "block");
+            $(".bg").css("display", "block");
+        }
+    }
+</script>
+
+</html>

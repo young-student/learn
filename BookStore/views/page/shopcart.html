@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../../static/css/base.min.css">
+    <link rel="stylesheet" href="../../static/css/shopcart.min.css">
+    <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 顶部模块 -->
+    <div class="top-wrapper">
+        <div class="top w">
+            <ul class="right-nav">
+                <li><a href="http://29759g4o70.imdo.co:14533/index">首页</a></li>
+                <li class="welcome">欢迎</li>
+                <li><a href="javascript:;"><i class="shopcart"></i>我的购物车</a></li>
+                <li><a href="http://29759g4o70.imdo.co:14533/v1/order/">我的订单</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 购物车列表 -->
+    <div class="container">
+        <div class="row th">
+            <div class="col-md-1">
+                <input type="checkbox" class="selectall">全选
+            </div>
+            <div class="col-md-3">
+                商品
+            </div>
+            <div class="col-md-2">
+                单价
+            </div>
+            <div class="col-md-2">
+                数量
+            </div>
+            <div class="col-md-2">
+                小计
+            </div>
+            <div class="col-md-2">
+                操作
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 tip"></div>
+        </div>
+        <div class="tbd"></div>
+        <div class="row footer">
+            <div class="col-md-1">
+                <input type="checkbox" class="selectall">全选
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;" class="del"> 删除选中的商品</a>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;" class="empty">清空购物车</a>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                已选<span class="totalcount"></span>件商品&nbsp;&nbsp;&nbsp;总价：<span class="total"></span>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;" class="checkout account">去结算</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../static/js/jquery.min.js"></script>
+<script src="../../static/js/shopcart.min.js"></script>
+
+</html>
