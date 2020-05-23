@@ -1,0 +1,295 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar{
+    .banner{
+        .user-info{
+            width: 100%;
+            font-size: 30rem / @baseFont;
+            color: #666;
+            background-color: #fff;
+            overflow: hidden;
+            text-align: center;
+            .address {
+                margin-top: 40rem / @baseFont;
+                font-size: 30rem / @baseFont;
+                font-weight: bold;
+                color: #000;
+
+                img{
+                    width: 15rem / @baseFont;
+                    margin-left: 10rem / @baseFont;
+                    vertical-align: middle;
+                }
+            }
+            .user{
+                display: block;
+                height: 60rem / @baseFont;
+                line-height: 60rem / @baseFont ;
+                margin-bottom: 15rem / @baseFont;
+            }
+            .bmx{
+                height: 10rem / @baseFont;
+                background: url(../img/delivery/banmaxian.png) no-repeat;
+                background-size: 100% auto;
+            }
+        }
+        .shop {
+            margin-top: 30rem / @baseFont;
+            background-color: #fff;
+            li {
+                border-bottom: 1px solid #ccc;
+                .shop-info:extend(.w) {
+                    border-bottom: 1px dashed #ccc;
+                    .img {
+                        float: left;
+                        margin-right: 30rem / @baseFont;
+                        line-height: 200rem / @baseFont ;
+                        img {
+                            width: 120rem / @baseFont ;
+                            vertical-align: middle;
+                        }
+                    }
+                    .shop {
+                        display: flex;
+                        float: left;
+                        flex-flow: column;
+                        justify-content: space-around;
+                        height: 120rem / @baseFont;
+                        margin-top: 40rem / @baseFont;
+                        .name {
+                            font-size: 30rem / @baseFont;
+                        }
+                        .price {
+                            color: #ff3300;
+                            span {
+                                font-size: 40rem / @baseFont;
+                                font-weight: bold;
+                            }
+                        }
+                        .des {
+                            color: #999;
+                            font-size: 20rem / @baseFont ;
+                            font-weight: bold;
+                        }
+                    }
+                    .count {
+                        display: block;
+                        float: right;
+                        line-height: 200rem / @baseFont;
+                        font-size: 30rem / @baseFont;
+                        font-weight: bold;
+                        color: #999;
+                    }
+                }
+                .delive:extend(.w){
+                    .peisong{
+                        margin-top: 20rem / @baseFont;
+                        font-size: 30rem / @baseFont;
+                        font-weight: bold;
+                        color: #000;
+
+                        span {
+                            float:right;
+                            color: #ff3300;
+                        }
+                    }
+                    .tip {
+                        display: block;
+                        margin-bottom: 20rem / @baseFont;
+                        font-size: 20rem / @baseFont;
+                        font-weight: bold;
+                        color: #ff3300;
+                    }
+                }
+                a:extend(.w){
+                    display: block;
+                    height: 100rem / @baseFont;
+                    line-height: 100rem / @baseFont;
+                    font-size: 30rem / @baseFont;
+                    font-weight: bold;
+                    color: #000;
+
+                    span {
+                        position: relative;
+                        float:right;
+                        margin-right: 40rem / @baseFont;
+                        font-weight: normal;
+                        color: #ff3300;
+                        i{
+                            position: absolute;
+                            top:0;
+                            right: -50rem / @baseFont;
+                            font-size: 40rem / @baseFont;
+                            color: #666;
+                        }
+                    } 
+                    .jifen{
+                        color: #666;
+                    }
+                }
+            }
+        }
+        .shop>li:first-child {
+            border: none;
+        }
+        .date{
+            margin-top: 30rem / @baseFont;
+            background-color: #fff;
+            li {
+                border-bottom: 1px solid #ccc;
+                a:extend(.w){
+                    display: block;
+                    height: 100rem / @baseFont;
+                    line-height: 100rem / @baseFont;
+                    font-size: 30rem / @baseFont;
+                    font-weight: bold;
+                    color: #000;
+
+                    span {
+                        position: relative;
+                        float:right;
+                        margin-right: 40rem / @baseFont;
+                        font-weight: normal;
+                        i{
+                            position: absolute;
+                            top:0;
+                            right: -50rem / @baseFont;
+                            font-size: 40rem / @baseFont;
+                            color: #666;
+                        }
+                    }
+                    .time-info {
+                        color: #666;
+                    }   
+                }
+            }
+        }
+        .message{
+            margin-top: 30rem / @baseFont;
+            background-color: #fff;
+            li {
+                border-bottom: 1px solid #ccc;
+                a:extend(.w){
+                    display: block;
+                    height: 100rem / @baseFont;
+                    line-height: 100rem / @baseFont;
+                    font-size: 30rem / @baseFont;
+                    font-weight: bold;
+                    color: #000;
+
+                    span {
+                        position: relative;
+                        float:right;
+                        margin-right: 40rem / @baseFont;
+                        font-weight: normal;
+                        color: #666;
+                        i{
+                            position: absolute;
+                            top:0;
+                            right: -50rem / @baseFont;
+                            font-size: 40rem / @baseFont;
+                        }
+                    }  
+                    .btn-bg{
+                        display: block;
+                        margin-top: 25rem / @baseFont;
+                        margin-right: 0;
+                        width: 100rem / @baseFont;
+                        height: 50rem / @baseFont;
+                        background-color: #4cd964;
+                        border-radius: 30rem / @baseFont;
+                        border: 1px solid transparent;
+
+                        .btn{
+                            display: block;
+                            top: 0;
+                            right: 0;
+                            width: 48rem / @baseFont;
+                            height: 48rem / @baseFont;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            border: 1px solid #ccc;
+                        }
+                    }
+                    .bg-close{
+                        background-color: #fff;
+                        border-color: #ccc;
+                        .btn-close{
+                            right: 50rem / @baseFont;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}
+.footer-bar{
+    position: absolute;
+    bottom: 0;
+    width: 750rem / @baseFont;
+    height: 100rem / @baseFont;
+    .amount {
+        box-sizing: border-box;
+        width: 60%;
+        height: 100%;
+        line-height: 100rem / @baseFont ;
+        float: left;
+        padding-left: 30rem / @baseFont ;
+        background-color: #444;
+
+        .total{
+            color: #fff;
+            .hl {
+                font-size: 40rem / @baseFont;
+            }
+        }
+    }
+    .checkout{
+        box-sizing: border-box;
+        width: 40%;
+        height: 100%;
+        line-height: 100rem / @baseFont ;
+        float: left;
+        padding-right: 30rem / @baseFont ;
+        background-color: #ef2b67;
+        a {
+            display: block;
+            font-size: 40rem / @baseFont;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

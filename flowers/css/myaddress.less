@@ -1,0 +1,83 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar {
+    .banner{
+        ul{
+            background-color: #fff;
+            li{
+                height: 140rem / @baseFont;
+                border-bottom: 1px solid #ccc;
+                a:extend(.w){
+                    display: block;
+                    position: relative;
+                    padding-top: 25rem / @baseFont;
+                    p{
+                        font-size: 32rem / @baseFont;
+                        font-weight: bold;
+                        color: #000;
+                    }
+                    span{
+                        color: #666;
+                    }
+                    .editor{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        width: 30rem / @baseFont;
+                        height: 30rem / @baseFont;
+                        background: url(../img/orderQuery/editor.png);
+                        background-size: 30rem / @baseFont auto;
+                    }
+                }
+            }
+        }
+    }
+}
+//footer
+.footer-bar{
+    position: absolute;
+    bottom: 0;
+    width: 750rem / @baseFont;
+    height: 100rem / @baseFont;
+    background-color: #ef2b67;
+    a:extend(.w){
+        display: block;
+        line-height: 100rem / @baseFont;
+        font-size: 50rem / @baseFont;
+        color: #fff;
+        text-align: center;
+    }
+}

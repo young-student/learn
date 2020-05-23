@@ -1,0 +1,98 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar{
+    .banner:extend(.w) {
+        .wechat {
+            line-height: 100rem / @baseFont;
+            font-size: 40rem / @baseFont;
+            color: #999;
+        }
+        .contact{
+            a {
+                display: block;
+                float: left;
+                width: 335rem / @baseFont;
+                height: 300rem / @baseFont;
+                border-radius: 5rem / @baseFont;
+                color: #fff;
+                text-align: center;
+
+                i {
+                    font-size: 120rem / @baseFont;
+                }
+                .ser {
+                    font-size: 40rem / @baseFont;
+                }
+            }
+            .vx{
+                background-color: #5eb864;
+                margin-right: 20rem / @baseFont;
+            }
+            .tel {
+                background-color: #ff7a7b;
+            }
+        }
+    }
+}
+// footer
+.footer-bar {
+    position: absolute;
+    bottom: 0;
+    width: 750rem / @baseFont;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    .footer:extend(.w){
+        height: 140rem / @baseFont ;
+        padding-top: 20rem / @baseFont;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li {
+                a{
+                    font-size: 30rem / @baseFont ;    
+                    color: #7f7f7f;
+                    text-align: center;
+                    i{
+                        display: block;
+                        font-size: 50rem / @baseFont;
+                    }
+                }
+            }
+        }
+        ul>li:nth-child(4) a{
+            color: #ef2b67;
+        }
+    }
+}

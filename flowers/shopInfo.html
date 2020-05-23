@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./css/shopInfo.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="top-bar">
+        <div class="top">
+            <div class="left-back">
+                <a href="#"><i></i> 返回</a>
+            </div>
+            <h3 class="title">商品详情</h3>
+            <div class="more">
+                <a href="#"><i></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="banner-bar">
+        <div class="banner">
+            <div class="header">
+                <div class="img">
+                    <img src="./img/shopcenter/shopinfo.png" alt="">
+                </div>
+                <div class="shop-des">
+                    <p class="flower-name">玫瑰花束 玫瑰花 爱情的精灵！</p>
+                    <p class="tip">特别提醒：此鲜花由于制作时间较长，请提前5小时下单！</p>
+                    <p class="shop-count">
+                        <span class="stock"><i></i> 库存 1526</span>
+                        <span><i></i> 销量 1452</span>
+                        <span><i></i> 三环内免费配送</span>
+                    </p>
+                    <p class="price">
+                        ￥<span class="hl">45</span>.50
+                        <span class="promise">配送保证</span>
+                        <span class="promise">支付保证</span>
+                        <span class="promise">新鲜采摘</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bd">
+                <p><span></span>商品详情:</p>
+                <img src="./img/shopcenter/shopdes.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <!-- 商品规格 -->
+    <div class="shop-select">
+        <div class="shop clearfix">
+            <div class="img">
+                <img src="./img/shoplist/shops02.png" alt="">
+            </div>
+            <div class="shop-info">
+                <p class="huaming">红玫瑰花束 送女友 送老婆 送爱人 镇店之花</p>
+                <p class="price">￥<span class="hl">189</span>.00</p>
+                <p class="shop-count">
+                    <span class="stock"><i></i> 库存 1525</span>
+                    <span><i></i> 销量 1452</span>
+                </p>
+            </div>
+        </div>
+        <div class="guige-box">
+            <div class="guige">
+                <p>规格：</p>
+                <div class="count clearfix">
+                    <span>11枝</span>
+                    <span class="red">16枝</span>
+                    <span>22枝</span>
+                    <span>99枝</span>
+                    <span>111枝</span>
+                    <span>166枝</span>
+                    <span>999枝</span>
+                </div>
+                <p>颜色：</p>
+                <div class="color">
+                    <span class="red">红色</span>
+                    <span>白色</span>
+                    <span>粉色</span>
+                </div>
+            </div>
+        </div>
+        <div class="buy-count">
+            <div class="buy">
+                <div>购买数量:
+                    <span class="puls">+</span><input type="text" value="2" id="count"><span class="reduce">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <!-- 底部导航 -->
+    <footer class="footer-bar">
+        <div class="footer">
+            <a href="#" class="kefu"><i></i>客服</a>
+            <a href="#" class="join-cart">加入购物车</a>
+            <a href="#" class="buy">立即购买</a>
+            <a href="#" class="shopcart">
+                <img src="./img/shopcenter/shopcart.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script>
+        var joinCart = document.querySelector(".join-cart");
+        var mask = document.querySelector(".mask");
+        var shopSelect = document.querySelector(".shop-select");
+        var shopCart = document.querySelector(".shopcart");
+        joinCart.addEventListener("touchstart", function () {
+            mask.style.display = "block";
+            shopSelect.style.display = "block";
+            shopCart.style.display = "none";
+        });
+        // 商品规格
+        var footer = document.querySelector(".footer");
+        var buy = footer.querySelector(".buy");
+        buy.addEventListener("touchstart", function () {
+            mask.style.display = "none";
+            shopSelect.style.display = "none";
+            shopCart.style.display = "block";
+        });
+        // 选择颜色
+        var count = document.querySelector(".count");
+        var spans = count.getElementsByTagName("span");
+        var len1 = spans.length;
+
+        var color = document.querySelector(".color");
+        var colorSpans = color.getElementsByTagName("span");
+        var len2 = colorSpans.length;
+
+        for (var i = 0; i < len2; i++) {
+            colorSpans[i].index = i;
+            colorSpans[i].addEventListener("touchstart", function () {
+                for (var j = 0; j < len2; j++) {
+                    colorSpans[j].className = "";
+                }
+                for (var j = 0; j < len1; j++) {
+                    spans[j].className = "";
+                }
+                if (this.index === 0) {
+                    colorSpans[this.index].classList.toggle("red");
+                    spans[1].className = "red";
+                    for (var i = 0; i < len1; i++) {
+                        spans[i].addEventListener("touchstart", function () {
+                            for (var j = 0; j < len1; j++) {
+                                spans[j].className = "";
+                            }
+                            this.classList.toggle("red");
+                        });
+                    }
+                } else if (this.index === 1) {
+                    colorSpans[this.index].classList.toggle("white");
+                    spans[1].className = "white";
+                    for (var i = 0; i < len1; i++) {
+                        spans[i].addEventListener("touchstart", function () {
+                            for (var j = 0; j < len1; j++) {
+                                spans[j].className = "";
+                            }
+                            this.classList.toggle("white");
+                        });
+                    }
+                } else {
+                    colorSpans[this.index].classList.toggle("pink");
+                    spans[1].className = "pink";
+                    for (var i = 0; i < len1; i++) {
+                        spans[i].addEventListener("touchstart", function () {
+                            for (var j = 0; j < len1; j++) {
+                                spans[j].className = "";
+                            }
+                            this.classList.toggle("pink");
+                        });
+                    }
+                }
+            });
+        }
+        // 数量加减
+        var puls = document.querySelector(".puls");
+        var reduce = document.querySelector(".reduce");
+        var ipt = document.getElementById("count");
+        var num = ipt.value;
+        puls.addEventListener("touchstart", function () {
+            num++;
+            ipt.value = num;
+        });
+        reduce.addEventListener("touchstart", function () {
+            if (num === 0) {
+                ipt.value = num;
+                return false;
+            }
+            num--;
+            ipt.value = num;
+        });
+    </script>
+</body>
+
+</html>

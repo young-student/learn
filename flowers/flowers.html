@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花材花语</title>
+    <link rel="stylesheet" href="./css/flowers.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="top-bar">
+        <div class="top">
+            <div class="left-back">
+                <a href="orderGuide.html"><i></i> 返回</a>
+            </div>
+            <h3 class="title">花材花语</h3>
+            <div class="more">
+                <a href="#"><i></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="banner-bar">
+        <div class="banner">
+            <ul>
+                <li><span>红玫瑰</span>热情、热恋、热爱着你</li>
+                <li><span>粉玫瑰</span>初恋、爱的宣言、关心</li>
+                <li><span>白玫瑰</span>天真、纯洁、纯真的爱</li>
+                <li><span>紫玫瑰</span>浪漫真情、珍贵独特</li>
+                <li><span>蓝玫瑰</span>清醇的爱、敦厚善良</li>
+                <li><span>香槟玫瑰</span>我只钟情你一个</li>
+                <li><span>黄玫瑰</span>为爱道歉</li>
+                <li><span>红色康乃馨</span>思念、祝健康长寿</li>
+                <li><span>黄色康乃馨</span>对母亲的感激之情、热爱着您</li>
+                <li><span>粉色康乃馨</span>祝永远美丽</li>
+                <li><span>郁金香</span>爱的告白、永恒的祝福</li>
+                <li><span>马蹄莲</span>永恒、优雅、希望、纯洁</li>
+                <li><span>百合</span>顺利、心想事成、祝福</li>
+                <li><span>向日葵</span>勇敢的去追求幸福、沉默的爱</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var div = document.querySelector(".banner");
+        var lis = div.getElementsByTagName("li");
+        var len = lis.length
+        for (var i = 0; i < len; i++) {
+            lis[i].addEventListener("touchstart", function () {
+                for (var j = 0; j < len; j++) {
+                    lis[j].children[0].style.color = "";
+                    lis[j].children[0].classList.remove("hover");
+                }
+                this.children[0].style.color = "#ef2b67";
+                this.children[0].classList.add("hover");
+            });
+        }
+    </script>
+</body>
+
+</html>

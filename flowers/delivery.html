@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配送信息</title>
+    <link rel="stylesheet" href="./css/delivery.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="top-bar">
+        <div class="top">
+            <div class="left-back">
+                <a href="#"><i></i> 返回</a>
+            </div>
+            <h3 class="title">配送信息</h3>
+            <div class="more">
+                <a href="#"><i></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="banner-bar">
+        <div class="banner">
+            <div class="user-info">
+                <p class="address">四川省成都市成华区建设路124号<img src="./img/delivery/arrow.png" alt=""></p>
+                <span class="user">邓(先生) 123 4567 8910</span>
+                <div class="bmx"></div>
+            </div>
+            <ul class="shop">
+                <li>
+                    <div class="shop-info clearfix">
+                        <div class="img">
+                            <img src="./img/shopcart/shopcart01.png" alt="">
+                        </div>
+                        <div class="shop">
+                            <h4 class="name">满天星鲜花束 1束</h4>
+                            <p class="price">￥<span>415</span>.50</p>
+                            <p class="des">规格：16枝 丨 颜色：红色 </p>
+                        </div>
+                        <span class="count">x2</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="delive">
+                        <p class="peisong">配送费<span>￥0.00</span></p>
+                        <span class="tip">三环以内免费配送，三环外需加配送费</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        满减优惠<span>满198减10<i></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        使用积分<span class="jifen">可用积分 963<i></i></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="date">
+                <li>
+                    <a href="#">
+                        配送日期<span>2020-5-20<i></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        配送时间<span class="time-info">请选择配送时间<i></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        下单联系人<span>123 4567 8910<i></i></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="message">
+                <li>
+                    <a href="#">
+                        需要祝福卡片<span id="btn-bg" class="btn-bg"><i id="btn" class="btn"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        祝福话语<span>请输入您想对收货人说的话<i></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        留言备注<span>请输入您想对我们说的话<i></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <footer class="footer-bar">
+        <div class="amount">
+            <p class="total"><span class="hl">共计：</span>￥<span class="hl">881</span>.00</p>
+        </div>
+        <div class="checkout">
+            <a href="#">立即支付</a>
+        </div>
+    </footer>
+    <script>
+        var bg = document.querySelector("#btn-bg");
+        var btn = document.querySelector("#btn");
+        btn.addEventListener("touchstart", function () {
+            bg.classList.toggle("bg-close");
+            btn.classList.toggle("btn-close");
+
+        });
+    </script>
+</body>
+
+</html>

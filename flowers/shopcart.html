@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/shopcart.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="top-bar">
+        <div class="top">
+            <div class="left-back">
+                <a href="orderQuery.html"><i></i> 返回</a>
+            </div>
+            <h3 class="title">购物车</h3>
+            <div class="more">
+                <a href="#"><i></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- bannaer -->
+    <div class="banner-bar">
+        <div class="banner">
+            <ul class="clearfix">
+                <li>
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="select">
+                                <a href="#" class="check"><i></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="./img/shopcart/shopcart01.png" alt="">
+                            </div>
+                            <div class="shop-info">
+                                <h4 class="name">满天星鲜花束 1束</h4>
+                                <p class="price">￥<span>415</span>.50</p>
+                                <p class="des">规格：16枝 丨 颜色：红色 </p>
+                            </div>
+                            <span class="count">x2</span>
+                        </div>
+                        <a href="#" class="del">删除</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="select">
+                                <a href="#" class="check"><i></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="./img/shopcart/shopcart02.png" alt="">
+                            </div>
+                            <div class="shop-info">
+                                <h4 class="name">99朵红玫瑰花束</h4>
+                                <p class="price">￥<span>189</span>.00</p>
+                                <p class="des">规格：16枝 丨 颜色：红色 </p>
+                            </div>
+                            <span class="count">x3</span>
+                        </div>
+                        <a href="#" class="del">删除</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="select">
+                                <a href="#" class="check"><i></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="./img/shopcart/shopcart03.png" alt="">
+                            </div>
+                            <div class="shop-info">
+                                <h4 class="name">33朵香槟玫瑰 1束</h4>
+                                <p class="price">￥<span>125</span>.50</p>
+                                <p class="des">规格：16枝 丨 颜色：红色 </p>
+                            </div>
+                            <span class="count">x2</span>
+                        </div>
+                        <a href="#" class="del">删除</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <footer class="footer-bar">
+        <div class="amount">
+            <p class="total">￥<span class="hl">880</span>.00<span class="info">| 不含配送费</span></p>
+        </div>
+        <div class="checkout">
+            <a href="#">去支付</a>
+        </div>
+    </footer>
+    <script>
+        var checks = document.querySelectorAll(".check");
+        for (var i = 0; i < checks.length; i++) {
+            checks[i].addEventListener("touchstart", function () {
+                this.classList.toggle("check-style");
+            });
+        }
+        var contentBoxs = document.querySelectorAll(".content-box");
+        for (var i = 0; i < contentBoxs.length; i++) {
+            // 手指坐标初始化
+            var startX = 0;
+            // 手指移动的距离初始化
+            var moveX = 0;
+            // 元素盒子的初始位置
+            contentBoxs[i].addEventListener("touchstart", function (e) {
+                startX = e.targetTouches[0].pageX;
+            });
+            contentBoxs[i].addEventListener("touchmove", function (e) {
+                moveX = e.targetTouches[0].pageX - startX;
+                if (moveX < 0) {
+                    moveX = -76
+                    this.style.left = moveX + "px";
+                } else {
+                    this.style.left = "0px";
+                }
+                e.preventDefault();
+            });
+        }
+
+    </script>
+</body>
+
+</html>

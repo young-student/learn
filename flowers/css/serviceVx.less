@@ -1,0 +1,47 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #fff;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar {
+    .banner:extend(.w){
+        text-align: center;
+        img{
+            width: 400rem / @baseFont;
+        }
+        p{
+            font-size: 30rem / @baseFont;
+            color: #666;
+        }
+    }
+}

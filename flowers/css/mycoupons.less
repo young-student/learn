@@ -1,0 +1,98 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar{
+    .banner{
+        ul:extend(.w){
+            li{
+                margin-top: 30rem / @baseFont;
+                width: 100%;
+                height: 180rem / @baseFont;
+                background: url(../img/orderQuery/youhuijuan.png);
+                background-size: 100% auto;
+
+                span{
+                    display:block;
+                }
+
+                .lf-box{
+                    margin-top: 30rem / @baseFont;
+                    float: left;
+                    width: 210rem / @baseFont;
+                    height: 100rem / @baseFont;
+                    padding: 10rem /@baseFont 0;
+                    border-right: 1px dashed #f0f0f0;
+                    color: #ed8f03;
+                    text-align: center;
+
+                    .money{
+                        font-size: 50rem / @baseFont;
+                    }
+                    .des{
+                        font-size: 20rem / @baseFont;
+                    }
+                }
+                .mid-box{
+                    float: left;
+                    margin-top: 30rem / @baseFont;
+                    padding-left: 40rem / @baseFont;
+                    width: 375rem / @baseFont;
+
+                    span{
+                        font-size: 25rem / @baseFont;
+                        color: #666;
+                    }
+                    .all{
+                        font-size: 30rem / @baseFont;
+                        font-weight: bold;
+                        color: #000;
+                    }
+
+                }
+                a{
+                    display: block;
+                    float: left;
+                    width: 40rem / @baseFont;
+                    height: 160rem / @baseFont;
+                    padding: 10rem / @baseFont;
+                    font-size: 25rem / @baseFont;
+                    color: #ed8f03;
+                    border-left: 1px dashed #f0f0f0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

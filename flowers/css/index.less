@@ -1,0 +1,311 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar {
+    .banner{
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        ul {
+            position: relative;
+            background-color: #f1556f;
+            padding-bottom: 10rem / @baseFont;
+
+            .gift {
+                
+                img {
+                    position: absolute;
+                    top: -45rem / @baseFont;
+                    right: 0;
+                    width: 220rem / @baseFont;
+                }
+                
+            }
+            // 公共样式
+            .items:extend(.w) {
+                width: 690rem / @baseFont ;
+                height: 415rem / @baseFont ;
+                font-size: 30rem / @baseFont ;
+                margin-bottom: 40rem / @baseFont ;
+
+                .theme {
+                    margin-left: 40rem / @baseFont  ;
+                    margin-bottom: 40rem / @baseFont ;
+                    padding-top: 40rem / @baseFont  ;
+                    height: 50rem / @baseFont ;
+                    line-height: 50rem / @baseFont ;
+                    font-size: 60rem / @baseFont ;
+                }
+                .des {
+                    margin-left: 40rem / @baseFont  ;
+                    margin-bottom: 40rem / @baseFont ;
+                }
+                
+                .buy {
+                    display: block;
+                    margin-left: 40rem / @baseFont  ;
+                    margin-bottom: 40rem / @baseFont ;
+                    width: 200rem / @baseFont ;
+                    height: 50rem / @baseFont ;
+                    line-height: 50rem / @baseFont ;
+                    color: #000;
+                    background-color: #f7ddba;
+                    text-align: center;
+                }
+            }
+            .shop-item1{
+                background: url(../img/shopcenter/shop05.png) no-repeat;
+                background-size: 720rem / @baseFont auto;
+                color: #fff;
+    
+                .info {
+                    display: block;
+                    margin-left: 40rem / @baseFont  ;
+                    margin-bottom: 40rem / @baseFont ;
+                    height: 50rem / @baseFont ;
+                    line-height: 50rem / @baseFont ;
+                    font-size: 50rem / @baseFont ;
+                }
+            }
+            .shop-item2{
+                background: url(../img/shopcenter/shop04.png) no-repeat;
+                background-size: 720rem / @baseFont auto;
+                color: #000;
+            }
+            .shop-item3{         
+                background: url(../img/shopcenter/shop03.png) no-repeat;  
+                background-size: 720rem / @baseFont auto;      
+                color: #000;
+            }
+            .shop-item4{
+                background: url(../img/shopcenter/shop02.png) no-repeat;
+                background-size: 720rem / @baseFont auto;
+                color: #000;
+            }
+            .shop-item5{
+                background: url(../img/shopcenter/shop01.png) no-repeat;
+                background-size: 720rem / @baseFont auto;
+                color: #fff;
+            }
+        }
+    }
+}
+// 广告
+.ad {
+    // display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 640rem / @baseFont;
+    height: 780rem / @baseFont;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+
+    .ad01 {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 480rem / @baseFont;
+        // background-color: red;
+        background: url(../img/shopcenter/ad01.png);
+        background-size: 100% auto;
+        i{
+            position: absolute;
+            top: 30rem / @baseFont;
+            right: 30rem / @baseFont;
+            color: #fff;
+        }
+    }
+    .ad02{
+        display: block;
+        width: 100%;
+        height: 300rem / @baseFont;
+        // background-color: red;
+        background: url(../img/shopcenter/ad02.png);
+        background-size: 100% auto;
+
+        .info {
+            margin: 0 30rem / @baseFont;
+            border-top: 1px dashed #ccc;
+            padding: 30rem / @baseFont;
+            color: #666;
+            font-size: 22rem / @baseFont;
+            text-align: center;
+        }
+        .know {
+            margin: 0 60rem / @baseFont;
+            width: 500rem / @baseFont;
+            height: 100rem / @baseFont;
+            background-color: red;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 30rem / @baseFont;
+            color: #fff;
+        }
+    }
+}
+// 加入购物车
+.join-shopcart{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 540rem / @baseFont;
+    height: 260rem / @baseFont;
+    background-color: #fff;
+    border-radius: 20rem / @baseFont;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+
+    .title {
+        margin-top: 30rem / @baseFont;
+        font-size: 40rem / @baseFont;
+        color: #000;
+    }
+    .info{
+        font-size: 30rem / @baseFont;
+    }
+    .sure{
+        display: block;
+        margin-top: 30rem / @baseFont;
+        height: 80rem / @baseFont;
+        line-height: 80rem / @baseFont;
+        font-size: 40rem / @baseFont;
+        color: #007aff;
+        border-top: 1px solid #ccc;
+    }
+}
+// 遮罩层
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+}
+// follow
+.follow-bar{
+    padding-top: 40rem / @baseFont ;
+    background-color: #fff;
+    padding-bottom: 180rem / @baseFont ;
+
+    .follow:extend(.w){
+        position: relative;
+        height: 460rem / @baseFont ;
+        background: url(../img/shopcenter/logo.png) no-repeat center;
+        background-size: 100% auto;
+        border: 1px solid #ccc;
+
+        .shopcart {
+            display: block;
+            position: absolute;
+            bottom: 140rem / @baseFont ;
+            right: 45%;
+            width: 120rem / @baseFont ;
+            height: 120rem / @baseFont ;
+            border-radius: 50%;
+            background-color: #7f7f7f;
+            text-align: center;
+            z-index: 9;
+
+            img {
+                width: 60rem / @baseFont ;
+                margin: 30rem / @baseFont;
+            }
+        }
+
+        .qrcode {
+            position: absolute;
+            top: 300rem / @baseFont ;
+            right: 60rem / @baseFont ;
+            font-size: 25rem / @baseFont ;
+        }
+        .slang{
+            position: absolute;
+            left: 45rem / @baseFont ;
+            bottom: 5rem / @baseFont;
+            width: 600rem / @baseFont ;
+            height: 110rem / @baseFont ;
+            line-height: 110rem / @baseFont ;
+            border-top: 1px solid #ccc;
+            font-size: 35rem / @baseFont ;
+            background-color: #fff;
+            color: #000;
+            text-align: left;
+
+            span {
+                margin: 0 30rem / @baseFont;
+            }
+        }
+    }
+}
+
+// footer
+.footer-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 9999;
+    .footer:extend(.w){
+        height: 140rem / @baseFont ;
+        padding-top: 20rem / @baseFont;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li {
+                a{
+                    font-size: 30rem / @baseFont ;    
+                    color: #7f7f7f;
+                    text-align: center;
+                    i{
+                        display: block;
+                        font-size: 50rem / @baseFont;
+                    }
+                }
+            }
+        }
+        ul>li:nth-child(2) a{
+            color: #ef2b67;
+        }
+    }
+}

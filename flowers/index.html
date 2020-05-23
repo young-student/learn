@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购花中心</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="top-bar">
+        <div class="top">
+            <div class="left-back">
+                <a href="#"><i></i> 返回</a>
+            </div>
+            <h3 class="title">购花中心</h3>
+            <div class="more">
+                <a href="#"><i></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- bannaer -->
+    <div class="banner-bar">
+        <div class="banner">
+            <div class="hot">
+                <a href="#">
+                    <img src="./img/shopcenter/best_sellers.png" alt="">
+                </a>
+            </div>
+            <div class="title">
+                <a href="#">
+                    <img src="./img/shopcenter/title.png" alt="">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <img src="./img/shopcenter/qingrenjie.png" alt="">
+                </li>
+                <li class="gift">
+                    <img src="./img/shopcenter/giftbox.png" alt="">
+                </li>
+                <li>
+                    <div class="shop-item1 items">
+                        <h4 class="theme">99支</h4>
+                        <span class="info">红玫瑰花束</span>
+                        <p class="des">卡罗拉玫瑰</p>
+                        <a href="#" class="buy">点击购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="shop-item2 items">
+                        <h4 class="theme">灯塔花盒</h4>
+                        <p class="des">郁金香 洋牡丹<br>卡罗拉玫瑰 雏菊<br>尤加利 山里红</p>
+                        <a href="#" class="buy">点击购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="shop-item3 items">
+                        <h4 class="theme">粉色花束</h4>
+                        <p class="des">绣球 粉佳人玫瑰<br>洋桔梗 棉花<br>银叶菊</p>
+                        <a href="#" class="buy">点击购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="shop-item4 items">
+                        <h4 class="theme">红玫瑰花束</h4>
+                        <p class="des">卡罗拉玫瑰 杨牡丹<br>霓虹泡泡 火炬<br>山里红</p>
+                        <a href="#" class="buy">点击购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="shop-item5 items">
+                        <h4 class="theme">鲜花抱抱桶</h4>
+                        <p class="des">卡罗拉玫瑰 大花蕙兰<br>郁金香 杨牡丹<br>山里红 尤加利</p>
+                        <a href="#" class="buy">点击购买</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 广告 -->
+    <div class="ad">
+        <a href="#" class="ad01"> <i class="close"></i></a>
+        <a href="#" class="ad02">
+            <p class="info">满168减10、满268减20、满368减30、满468减40、 满568减50、满668减60、满768减70、满868减80、满968减100</p>
+            <button class="know">我知道了</button>
+        </a>
+    </div>
+    <!-- 加入购物车 -->
+    <div class="join-shopcart">
+        <div class="title">加入成功</div>
+        <p class="info">商品已经加入购物车</p>
+        <a href="#" class="sure">我知道了</a>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <!-- 关注我们 -->
+    <div class="follow-bar">
+        <div class="follow">
+            <a href="#" class="shopcart">
+                <img src="./img/shopcenter/shopcart.png" alt="">
+            </a>
+            <span class="qrcode">[长按二维码识别关注]</span>
+            <div class="slang">
+                无色花艺<span>|</span>感受一束花带给您的愉悦
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航 -->
+    <footer class="footer-bar">
+        <div class="footer">
+            <ul>
+                <li><a href="orderGuide.html"><i></i>下单指南</a></li>
+                <li><a href="index.html"><i></i>购花中心</a></li>
+                <li><a href="orderQuery.html"><i></i>花单查询</a></li>
+                <li><a href="service.html"><i></i>花务员</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var joinShopcart = document.querySelector(".join-shopcart");
+        var sure = joinShopcart.querySelector(".sure");
+        var mask = document.querySelector(".mask");
+        var buys = document.querySelectorAll(".buy");
+        var len = buys.length;
+        for (var i = 0; i < len; i++) {
+            buys[i].addEventListener("touchstart", function () {
+                joinShopcart.style.display = "block";
+                mask.style.display = "block";
+            });
+        }
+        sure.addEventListener("touchstart", function () {
+            joinShopcart.style.display = "none";
+            mask.style.display = "none";
+        });
+        var ad = document.querySelector(".ad");
+        var close = document.querySelector(".close");
+        var know = document.querySelector(".know");
+        close.addEventListener("touchstart", function () {
+            ad.style.display = "none";
+            mask.style.display = "none";
+        });
+        know.addEventListener("touchstart", function () {
+            ad.style.display = "none";
+            mask.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>

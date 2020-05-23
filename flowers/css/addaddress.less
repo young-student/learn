@@ -1,0 +1,97 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar {
+    .banner{
+        form{
+            margin-top: 30rem / @baseFont;
+            background-color: #fff;
+            div:extend(.w){
+                position: relative;
+                height: 110rem / @baseFont;
+                line-height: 110rem / @baseFont;
+                border-bottom: 1px solid #f0f0f0;
+
+                label{
+                    display: inline-block;
+                    width: 150rem / @baseFont;
+                }
+                input{
+                    width: 530rem / @baseFont;
+                    border:none;
+                    outline: none;
+                }
+                #username{
+                    padding-bottom: 20rem / @baseFont;
+                    border-bottom: 1px solid #f0f0f0;
+                }
+                .arrow{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .name{
+                height: 250rem / @baseFont;
+                a{
+                    display: block;
+                    float: right;
+                    width: 250rem / @baseFont;
+                    height: 60rem / @baseFont;
+                    margin-top: 30rem / @baseFont;
+                    margin-left: 30rem / @baseFont;
+                    line-height: 60rem /@baseFont;
+                    background-color: #fff;
+                    border: 1px solid #ef2b67;
+                    font-size: 30rem / @baseFont;
+                    color: #ef2b67;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+//footer
+.footer-bar{
+    margin-top: 50rem / @baseFont;
+    a:extend(.w){
+        display: block;
+        line-height: 100rem / @baseFont;
+        font-size: 50rem / @baseFont;
+        background-color: #ef2b67;
+        color: #fff;
+        text-align: center;
+    }
+}

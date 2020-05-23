@@ -1,0 +1,140 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar{
+    .banner:extend(.w){
+        box-sizing: border-box;
+        margin-top: 30rem / @baseFont;
+        padding: 30rem / @baseFont;
+        height: 735rem / @baseFont;
+        background-color: #fff;
+
+        .order-info{
+            // height: 218rem / @baseFont;
+            position: relative;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 30rem / @baseFont;
+            .order-time {
+                line-height: 80rem / @baseFont;
+                font-size: 30rem / @baseFont;
+                color: #999;
+            }
+            .user-info {
+                font-size: 30rem / @baseFont;
+                font-weight: bold;
+                color: #000;
+            }
+            .user-address {
+                font-size: 30rem / @baseFont;
+                font-weight: bold;
+                color: #000;
+            }
+            .finish{
+                position: absolute;
+                top: 15rem / @baseFont;
+                right: 0;
+                font-size: 30rem / @baseFont;
+                font-weight: bold;
+                color: #ef2b67;
+            }
+        }
+        .shop-info {
+            border-bottom: 1px dashed #ccc;
+            .img {
+                float: left;
+                margin-right: 30rem / @baseFont;
+                line-height: 200rem / @baseFont ;
+                img {
+                    width: 120rem / @baseFont ;
+                    vertical-align: middle;
+                }
+            }
+            .shop {
+                display: flex;
+                float: left;
+                flex-flow: column;
+                justify-content: space-around;
+                height: 120rem / @baseFont;
+                margin-top: 40rem / @baseFont;
+                .name {
+                    font-size: 30rem / @baseFont;
+                }
+                .price {
+                    color: #ff3300;
+                    span {
+                        font-size: 40rem / @baseFont;
+                        font-weight: bold;
+                    }
+                }
+                .des {
+                    color: #999999;
+                    font-size: 20rem / @baseFont ;
+                    font-weight: bold;
+                }
+            }
+            .count {
+                display: block;
+                float: right;
+                line-height: 200rem / @baseFont;
+                font-size: 30rem / @baseFont;
+                font-weight: bold;
+                color: #999;
+            }
+        }
+        .cost-info{
+            border-bottom: 1px dashed #ccc;
+            line-height: 70rem / @baseFont;
+            color: #999;
+            p {
+                span{
+                    float: right;
+                }
+            }
+        }
+        .total{
+            line-height: 100rem / @baseFont;
+            font-weight: bold;
+            p {
+                .price {
+                    float:right;
+                    color: #ff3300;
+                    .lh {
+                        font-size: 40rem / @baseFont;
+                    }
+                }
+            }
+        }
+    }
+}

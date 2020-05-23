@@ -1,0 +1,366 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?wrv7vu');
+  src: url('../fonts/icomoon.eot?wrv7vu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?wrv7vu') format('truetype'), url('../fonts/icomoon.woff?wrv7vu') format('woff'), url('../fonts/icomoon.svg?wrv7vu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.w,
+.top-bar .top,
+.banner-bar .banner ul .items,
+.follow-bar .follow,
+.footer-bar .footer {
+  width: 13.8rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 50px;
+}
+i {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+}
+.top-bar {
+  background-color: black;
+}
+.top-bar .top {
+  display: flex;
+  height: 2rem;
+  line-height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .top .title {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.top-bar .top a {
+  color: #ffffff;
+  font-size: 0.6rem;
+}
+.top-bar .top a i {
+  font-size: 1rem;
+  vertical-align: -0.24rem;
+}
+.banner-bar .banner img {
+  width: 100%;
+  vertical-align: middle;
+}
+.banner-bar .banner ul {
+  position: relative;
+  background-color: #f1556f;
+  padding-bottom: 0.2rem;
+}
+.banner-bar .banner ul .gift img {
+  position: absolute;
+  top: -0.9rem;
+  right: 0;
+  width: 4.4rem;
+}
+.banner-bar .banner ul .items {
+  width: 13.8rem;
+  height: 8.3rem;
+  font-size: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+.banner-bar .banner ul .items .theme {
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 1.2rem;
+}
+.banner-bar .banner ul .items .des {
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.banner-bar .banner ul .items .buy {
+  display: block;
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+  width: 4rem;
+  height: 1rem;
+  line-height: 1rem;
+  color: #000;
+  background-color: #f7ddba;
+  text-align: center;
+}
+.banner-bar .banner ul .shop-item1 {
+  background: url(../img/shopcenter/shop05.png) no-repeat;
+  background-size: 14.4rem auto;
+  color: #fff;
+}
+.banner-bar .banner ul .shop-item1 .info {
+  display: block;
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+.banner-bar .banner ul .shop-item2 {
+  background: url(../img/shopcenter/shop04.png) no-repeat;
+  background-size: 14.4rem auto;
+  color: #000;
+}
+.banner-bar .banner ul .shop-item3 {
+  background: url(../img/shopcenter/shop03.png) no-repeat;
+  background-size: 14.4rem auto;
+  color: #000;
+}
+.banner-bar .banner ul .shop-item4 {
+  background: url(../img/shopcenter/shop02.png) no-repeat;
+  background-size: 14.4rem auto;
+  color: #000;
+}
+.banner-bar .banner ul .shop-item5 {
+  background: url(../img/shopcenter/shop01.png) no-repeat;
+  background-size: 14.4rem auto;
+  color: #fff;
+}
+.ad {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 12.8rem;
+  height: 15.6rem;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.ad .ad01 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 9.6rem;
+  background: url(../img/shopcenter/ad01.png);
+  background-size: 100% auto;
+}
+.ad .ad01 i {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  color: #fff;
+}
+.ad .ad02 {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  background: url(../img/shopcenter/ad02.png);
+  background-size: 100% auto;
+}
+.ad .ad02 .info {
+  margin: 0 0.6rem;
+  border-top: 1px dashed #ccc;
+  padding: 0.6rem;
+  color: #666;
+  font-size: 0.44rem;
+  text-align: center;
+}
+.ad .ad02 .know {
+  margin: 0 1.2rem;
+  width: 10rem;
+  height: 2rem;
+  background-color: red;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #fff;
+}
+.join-shopcart {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 10.8rem;
+  height: 5.2rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 999;
+}
+.join-shopcart .title {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #000;
+}
+.join-shopcart .info {
+  font-size: 0.6rem;
+}
+.join-shopcart .sure {
+  display: block;
+  margin-top: 0.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+  color: #007aff;
+  border-top: 1px solid #ccc;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+.follow-bar {
+  padding-top: 0.8rem;
+  background-color: #fff;
+  padding-bottom: 3.6rem;
+}
+.follow-bar .follow {
+  position: relative;
+  height: 9.2rem;
+  background: url(../img/shopcenter/logo.png) no-repeat center;
+  background-size: 100% auto;
+  border: 1px solid #ccc;
+}
+.follow-bar .follow .shopcart {
+  display: block;
+  position: absolute;
+  bottom: 2.8rem;
+  right: 45%;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: #7f7f7f;
+  text-align: center;
+  z-index: 9;
+}
+.follow-bar .follow .shopcart img {
+  width: 1.2rem;
+  margin: 0.6rem;
+}
+.follow-bar .follow .qrcode {
+  position: absolute;
+  top: 6rem;
+  right: 1.2rem;
+  font-size: 0.5rem;
+}
+.follow-bar .follow .slang {
+  position: absolute;
+  left: 0.9rem;
+  bottom: 0.1rem;
+  width: 12rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.7rem;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+}
+.follow-bar .follow .slang span {
+  margin: 0 0.6rem;
+}
+.footer-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 9999;
+}
+.footer-bar .footer {
+  height: 2.8rem;
+  padding-top: 0.4rem;
+}
+.footer-bar .footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bar .footer ul li a {
+  font-size: 0.6rem;
+  color: #7f7f7f;
+  text-align: center;
+}
+.footer-bar .footer ul li a i {
+  display: block;
+  font-size: 1rem;
+}
+.footer-bar .footer ul > li:nth-child(2) a {
+  color: #ef2b67;
+}

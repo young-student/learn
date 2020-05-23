@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?wrv7vu');
+  src: url('../fonts/icomoon.eot?wrv7vu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?wrv7vu') format('truetype'), url('../fonts/icomoon.woff?wrv7vu') format('woff'), url('../fonts/icomoon.svg?wrv7vu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.w,
+.top-bar .top,
+.banner-bar .banner {
+  width: 13.8rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 50px;
+}
+i {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+.top-bar {
+  background-color: black;
+}
+.top-bar .top {
+  display: flex;
+  height: 2rem;
+  line-height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .top .title {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.top-bar .top a {
+  color: #ffffff;
+  font-size: 0.6rem;
+}
+.top-bar .top a i {
+  font-size: 1rem;
+  vertical-align: -0.24rem;
+}
+.banner-bar .banner {
+  box-sizing: border-box;
+  margin-top: 0.6rem;
+  padding: 0.6rem;
+  height: 14.7rem;
+  background-color: #fff;
+}
+.banner-bar .banner .order-info {
+  position: relative;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.6rem;
+}
+.banner-bar .banner .order-info .order-time {
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #999;
+}
+.banner-bar .banner .order-info .user-info {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .order-info .user-address {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .order-info .finish {
+  position: absolute;
+  top: 0.3rem;
+  right: 0;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #ef2b67;
+}
+.banner-bar .banner .shop-info {
+  border-bottom: 1px dashed #ccc;
+}
+.banner-bar .banner .shop-info .img {
+  float: left;
+  margin-right: 0.6rem;
+  line-height: 4rem;
+}
+.banner-bar .banner .shop-info .img img {
+  width: 2.4rem;
+  vertical-align: middle;
+}
+.banner-bar .banner .shop-info .shop {
+  display: flex;
+  float: left;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 2.4rem;
+  margin-top: 0.8rem;
+}
+.banner-bar .banner .shop-info .shop .name {
+  font-size: 0.6rem;
+}
+.banner-bar .banner .shop-info .shop .price {
+  color: #ff3300;
+}
+.banner-bar .banner .shop-info .shop .price span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.banner-bar .banner .shop-info .shop .des {
+  color: #999999;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+.banner-bar .banner .shop-info .count {
+  display: block;
+  float: right;
+  line-height: 4rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #999;
+}
+.banner-bar .banner .cost-info {
+  border-bottom: 1px dashed #ccc;
+  line-height: 1.4rem;
+  color: #999;
+}
+.banner-bar .banner .cost-info p span {
+  float: right;
+}
+.banner-bar .banner .total {
+  line-height: 2rem;
+  font-weight: bold;
+}
+.banner-bar .banner .total p .price {
+  float: right;
+  color: #ff3300;
+}
+.banner-bar .banner .total p .price .lh {
+  font-size: 0.8rem;
+}

@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?wrv7vu');
+  src: url('../fonts/icomoon.eot?wrv7vu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?wrv7vu') format('truetype'), url('../fonts/icomoon.woff?wrv7vu') format('woff'), url('../fonts/icomoon.svg?wrv7vu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.w,
+.top-bar .top,
+.banner-bar .banner ul {
+  width: 13.8rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 50px;
+}
+i {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  background: url(../img/order/flowbg.png);
+}
+.top-bar {
+  background-color: black;
+}
+.top-bar .top {
+  display: flex;
+  height: 2rem;
+  line-height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .top .title {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.top-bar .top a {
+  color: #ffffff;
+  font-size: 0.6rem;
+}
+.top-bar .top a i {
+  font-size: 1rem;
+  vertical-align: -0.24rem;
+}
+.banner-bar .banner ul {
+  padding-top: 0.6rem;
+}
+.banner-bar .banner ul li {
+  line-height: 1.6rem;
+  color: #999;
+}
+.banner-bar .banner ul li img {
+  width: 0.8rem;
+  margin-right: 0.6rem;
+  vertical-align: -0.16rem;
+}
+.banner-bar .banner ul li span {
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000;
+}

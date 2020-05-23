@@ -1,0 +1,100 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner {
+    ul:extend(.w) {
+        padding-bottom: 80rem / @baseFont;
+        li {
+            width: 100%;
+            height: 230rem / @baseFont;
+            margin-top: 40rem / @baseFont;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                line-height: 230rem / @baseFont;
+                text-align: center;
+                font-size: 60rem / @baseFont;
+                color: #f1556f;
+            }
+        }
+        .order-item1{
+            background: url(../img/order/orderbg01.png);
+            background-size:100% auto;
+        }
+        .order-item2{
+            background: url(../img/order/orderbg02.png);
+            background-size: 100% auto;
+        }
+        .order-item3{
+            background: url(../img/order/orderbg03.png);
+            background-size: 100% auto;
+        }
+        .order-item4{
+            background: url(../img/order/orderbg04.png);
+            background-size: 100% auto;
+        }
+    }
+}
+// footer
+.footer-bar {
+    position: absolute;
+    bottom: 0;
+    width: 750rem / @baseFont;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    .footer:extend(.w){
+        height: 140rem / @baseFont ;
+        padding-top: 20rem / @baseFont;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li {
+                a{
+                    font-size: 30rem / @baseFont ;    
+                    color: #7f7f7f;
+                    text-align: center;
+                    i{
+                        display: block;
+                        font-size: 50rem / @baseFont;
+                    }
+                }
+            }
+        }
+        ul>li:nth-child(1) a{
+            color: #ef2b67;
+        }
+    }
+}

@@ -1,0 +1,372 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?wrv7vu');
+  src: url('../fonts/icomoon.eot?wrv7vu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?wrv7vu') format('truetype'), url('../fonts/icomoon.woff?wrv7vu') format('woff'), url('../fonts/icomoon.svg?wrv7vu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.w,
+.top-bar .top,
+.banner-bar .banner .shop li .shop-info,
+.banner-bar .banner .shop li .delive,
+.banner-bar .banner .shop li a,
+.banner-bar .banner .date li a,
+.banner-bar .banner .message li a {
+  width: 13.8rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 50px;
+}
+i {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+.top-bar {
+  background-color: black;
+}
+.top-bar .top {
+  display: flex;
+  height: 2rem;
+  line-height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .top .title {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.top-bar .top a {
+  color: #ffffff;
+  font-size: 0.6rem;
+}
+.top-bar .top a i {
+  font-size: 1rem;
+  vertical-align: -0.24rem;
+}
+.banner-bar .banner .user-info {
+  width: 100%;
+  font-size: 0.6rem;
+  color: #666;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+.banner-bar .banner .user-info .address {
+  margin-top: 0.8rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .user-info .address img {
+  width: 0.3rem;
+  margin-left: 0.2rem;
+  vertical-align: middle;
+}
+.banner-bar .banner .user-info .user {
+  display: block;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+.banner-bar .banner .user-info .bmx {
+  height: 0.2rem;
+  background: url(../img/delivery/banmaxian.png) no-repeat;
+  background-size: 100% auto;
+}
+.banner-bar .banner .shop {
+  margin-top: 0.6rem;
+  background-color: #fff;
+}
+.banner-bar .banner .shop li {
+  border-bottom: 1px solid #ccc;
+}
+.banner-bar .banner .shop li .shop-info {
+  border-bottom: 1px dashed #ccc;
+}
+.banner-bar .banner .shop li .shop-info .img {
+  float: left;
+  margin-right: 0.6rem;
+  line-height: 4rem;
+}
+.banner-bar .banner .shop li .shop-info .img img {
+  width: 2.4rem;
+  vertical-align: middle;
+}
+.banner-bar .banner .shop li .shop-info .shop {
+  display: flex;
+  float: left;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 2.4rem;
+  margin-top: 0.8rem;
+}
+.banner-bar .banner .shop li .shop-info .shop .name {
+  font-size: 0.6rem;
+}
+.banner-bar .banner .shop li .shop-info .shop .price {
+  color: #ff3300;
+}
+.banner-bar .banner .shop li .shop-info .shop .price span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.banner-bar .banner .shop li .shop-info .shop .des {
+  color: #999;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+.banner-bar .banner .shop li .shop-info .count {
+  display: block;
+  float: right;
+  line-height: 4rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #999;
+}
+.banner-bar .banner .shop li .delive .peisong {
+  margin-top: 0.4rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .shop li .delive .peisong span {
+  float: right;
+  color: #ff3300;
+}
+.banner-bar .banner .shop li .delive .tip {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.4rem;
+  font-weight: bold;
+  color: #ff3300;
+}
+.banner-bar .banner .shop li a {
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .shop li a span {
+  position: relative;
+  float: right;
+  margin-right: 0.8rem;
+  font-weight: normal;
+  color: #ff3300;
+}
+.banner-bar .banner .shop li a span i {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+.banner-bar .banner .shop li a .jifen {
+  color: #666;
+}
+.banner-bar .banner .shop > li:first-child {
+  border: none;
+}
+.banner-bar .banner .date {
+  margin-top: 0.6rem;
+  background-color: #fff;
+}
+.banner-bar .banner .date li {
+  border-bottom: 1px solid #ccc;
+}
+.banner-bar .banner .date li a {
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .date li a span {
+  position: relative;
+  float: right;
+  margin-right: 0.8rem;
+  font-weight: normal;
+}
+.banner-bar .banner .date li a span i {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+.banner-bar .banner .date li a .time-info {
+  color: #666;
+}
+.banner-bar .banner .message {
+  margin-top: 0.6rem;
+  background-color: #fff;
+}
+.banner-bar .banner .message li {
+  border-bottom: 1px solid #ccc;
+}
+.banner-bar .banner .message li a {
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .message li a span {
+  position: relative;
+  float: right;
+  margin-right: 0.8rem;
+  font-weight: normal;
+  color: #666;
+}
+.banner-bar .banner .message li a span i {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  font-size: 0.8rem;
+}
+.banner-bar .banner .message li a .btn-bg {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0;
+  width: 2rem;
+  height: 1rem;
+  background-color: #4cd964;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+}
+.banner-bar .banner .message li a .btn-bg .btn {
+  display: block;
+  top: 0;
+  right: 0;
+  width: 0.96rem;
+  height: 0.96rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.banner-bar .banner .message li a .bg-close {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.banner-bar .banner .message li a .bg-close .btn-close {
+  right: 1rem;
+}
+.footer-bar {
+  position: absolute;
+  bottom: 0;
+  width: 15rem;
+  height: 2rem;
+}
+.footer-bar .amount {
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+  line-height: 2rem;
+  float: left;
+  padding-left: 0.6rem;
+  background-color: #444;
+}
+.footer-bar .amount .total {
+  color: #fff;
+}
+.footer-bar .amount .total .hl {
+  font-size: 0.8rem;
+}
+.footer-bar .checkout {
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+  line-height: 2rem;
+  float: left;
+  padding-right: 0.6rem;
+  background-color: #ef2b67;
+}
+.footer-bar .checkout a {
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+}

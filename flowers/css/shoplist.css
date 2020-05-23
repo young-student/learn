@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?wrv7vu');
+  src: url('../fonts/icomoon.eot?wrv7vu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?wrv7vu') format('truetype'), url('../fonts/icomoon.woff?wrv7vu') format('woff'), url('../fonts/icomoon.svg?wrv7vu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.w,
+.top-bar .top,
+.banner-bar .banner .header,
+.banner-bar .banner ul li .shop,
+.footer-bar .footer {
+  width: 13.8rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 50px;
+}
+i {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.top-bar {
+  background-color: black;
+}
+.top-bar .top {
+  display: flex;
+  height: 2rem;
+  line-height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .top .title {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.top-bar .top a {
+  color: #ffffff;
+  font-size: 0.6rem;
+}
+.top-bar .top a i {
+  font-size: 1rem;
+  vertical-align: -0.24rem;
+}
+.banner-bar .banner .header {
+  height: 2rem;
+  line-height: 2rem;
+}
+.banner-bar .banner .header a {
+  display: inline-block;
+  width: 3.2rem;
+  height: 100%;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  color: #000;
+  text-align: center;
+}
+.banner-bar .banner .header .current {
+  color: #ff6600;
+}
+.banner-bar .banner .header .order {
+  position: relative;
+}
+.banner-bar .banner .header .order::before {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.6rem;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0.12rem solid transparent;
+  border-bottom-color: black;
+}
+.banner-bar .banner .header .order::after {
+  position: absolute;
+  top: 1.1rem;
+  right: 0.6rem;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0.12rem solid transparent;
+  border-top-color: black;
+}
+.banner-bar .banner ul li {
+  height: 4rem;
+  border-top: 1px solid #f0f0f0;
+}
+.banner-bar .banner ul li .shop {
+  position: relative;
+}
+.banner-bar .banner ul li .shop .img {
+  float: left;
+  width: 25%;
+}
+.banner-bar .banner ul li .shop .img img {
+  margin-top: 0.6rem;
+  width: 2.8rem;
+}
+.banner-bar .banner ul li .shop .shop-info {
+  float: left;
+  width: 75%;
+  margin-top: 0.6rem;
+}
+.banner-bar .banner ul li .shop .shop-info .huaming {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner ul li .shop .shop-info .price {
+  color: #ff6600;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.banner-bar .banner ul li .shop .shop-info .price .hl {
+  font-size: 0.7rem;
+}
+.banner-bar .banner ul li .shop .shop-info .shop-count {
+  font-size: 0.5rem;
+  color: #666;
+}
+.banner-bar .banner ul li .shop .shop-info .shop-count span {
+  margin-right: 1rem;
+}
+.banner-bar .banner ul li .shop .shop-cart {
+  position: absolute;
+  right: 0;
+  bottom: 0.6rem;
+  font-size: 1rem;
+  color: #ef2b67;
+}
+.footer-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 9999;
+}
+.footer-bar .footer {
+  height: 2.8rem;
+  padding-top: 0.4rem;
+}
+.footer-bar .footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bar .footer ul li a {
+  font-size: 0.6rem;
+  color: #7f7f7f;
+  text-align: center;
+}
+.footer-bar .footer ul li a i {
+  display: block;
+  font-size: 1rem;
+}
+.footer-bar .footer ul > li:nth-child(2) a {
+  color: #ef2b67;
+}

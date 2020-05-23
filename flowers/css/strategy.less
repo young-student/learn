@@ -1,0 +1,73 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background: url(../img/order/flowbg.png);
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar{
+    .banner{
+        ul:extend(.w){            
+            li{
+                margin-top: 50rem / @baseFont;
+                overflow: hidden;
+                img{
+                    float: left;
+                    width: 40rem / @baseFont;
+                    margin-right: 30rem / @baseFont;
+                    margin-top: 10rem / @baseFont;
+                }
+                div {
+                    float: left;
+                    width: 620rem / @baseFont;
+                    h4 {
+                        font-size: 40rem / @baseFont;
+                    }
+                    p {
+                        line-height: 50rem / @baseFont;
+                        font-size: 26rem / @baseFont;
+                        color: #666;
+                        text-align: left;
+                        span{
+                            font-size: 30rem / @baseFont;
+                            font-weight: bold;
+                            color: #000;
+                        }
+                    }
+                    .popular{
+                        font-weight: bold;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

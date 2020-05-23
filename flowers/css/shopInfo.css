@@ -1,0 +1,389 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?wrv7vu');
+  src: url('../fonts/icomoon.eot?wrv7vu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?wrv7vu') format('truetype'), url('../fonts/icomoon.woff?wrv7vu') format('woff'), url('../fonts/icomoon.svg?wrv7vu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.w,
+.top-bar .top,
+.banner-bar .banner .header .shop-des,
+.shop-select .shop,
+.shop-select .guige-box .guige,
+.shop-select .buy-count .buy {
+  width: 13.8rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 50px;
+}
+i {
+  font-family: 'icomoon';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+.top-bar {
+  background-color: black;
+}
+.top-bar .top {
+  display: flex;
+  height: 2rem;
+  line-height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .top .title {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.top-bar .top a {
+  color: #ffffff;
+  font-size: 0.6rem;
+}
+.top-bar .top a i {
+  font-size: 1rem;
+  vertical-align: -0.24rem;
+}
+.banner-bar .banner .header {
+  background-color: #fff;
+}
+.banner-bar .banner .header .img {
+  width: 100%;
+}
+.banner-bar .banner .header .img img {
+  width: 100%;
+}
+.banner-bar .banner .header .shop-des {
+  padding-bottom: 0.6rem;
+}
+.banner-bar .banner .header .shop-des p {
+  margin-top: 0.2rem;
+}
+.banner-bar .banner .header .shop-des .flower-name {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #000;
+}
+.banner-bar .banner .header .shop-des .tip {
+  font-size: 0.4rem;
+  color: #ff3300;
+}
+.banner-bar .banner .header .shop-des .shop-count {
+  font-size: 0.4rem;
+  color: #666;
+}
+.banner-bar .banner .header .shop-des .shop-count span {
+  margin-right: 0.6rem;
+}
+.banner-bar .banner .header .shop-des .price {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #ff3300;
+}
+.banner-bar .banner .header .shop-des .price .hl {
+  font-size: 0.8rem;
+}
+.banner-bar .banner .header .shop-des .price .promise {
+  box-sizing: border-box;
+  display: block;
+  float: right;
+  margin-top: 0.2rem;
+  margin-left: 0.4rem;
+  width: 2.3rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.4rem;
+  font-weight: normal;
+  border: 1px solid #ef9e25;
+  color: #ef9e25;
+  text-align: center;
+}
+.banner-bar .banner .bd p {
+  margin-top: 0.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+}
+.banner-bar .banner .bd p span {
+  display: block;
+  float: left;
+  margin-top: 0.3rem;
+  margin-right: 0.4rem;
+  width: 0.2rem;
+  height: 1rem;
+  background-color: #ef9e25;
+}
+.banner-bar .banner .bd img {
+  width: 100%;
+}
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+.shop-select {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 2rem;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+.shop-select .shop .img {
+  float: left;
+  width: 25%;
+}
+.shop-select .shop .img img {
+  margin-top: 0.6rem;
+  width: 2.8rem;
+}
+.shop-select .shop .shop-info {
+  float: left;
+  width: 75%;
+  margin-top: 0.6rem;
+}
+.shop-select .shop .shop-info .huaming {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shop-select .shop .shop-info .price {
+  color: #ff6600;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+.shop-select .shop .shop-info .price .hl {
+  font-size: 0.7rem;
+}
+.shop-select .shop .shop-info .shop-count {
+  font-size: 0.5rem;
+  color: #666;
+}
+.shop-select .shop .shop-info .shop-count span {
+  margin-right: 1rem;
+}
+.shop-select .guige-box {
+  margin-top: 0.6rem;
+  height: 9.4rem;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px dashed #f0f0f0;
+}
+.shop-select .guige-box .guige p {
+  margin-top: 0.6rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.shop-select .guige-box .guige span {
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  margin: 0.6rem 0.44rem 0 0;
+  width: 3rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+  text-align: center;
+}
+.shop-select .guige-box .guige .red {
+  background-color: red;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.shop-select .guige-box .guige .white {
+  background-color: white;
+  color: #000;
+}
+.shop-select .guige-box .guige .pink {
+  background-color: pink;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.shop-select .buy-count .buy {
+  height: 2.4rem;
+  line-height: 2.4rem;
+}
+.shop-select .buy-count .buy div {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.shop-select .buy-count .buy div span {
+  float: right;
+  box-sizing: border-box;
+  display: block;
+  width: 2rem;
+  height: 1.2rem;
+  margin-top: 0.6rem;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  color: #666;
+  border-radius: 0.1rem;
+  text-align: center;
+}
+.shop-select .buy-count .buy div input {
+  float: right;
+  border: none;
+  outline: none;
+  margin-top: 0.6rem;
+  width: 2rem;
+  height: 1.2rem;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+.footer-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.98rem;
+  border-top: 0.02rem solid #ccc;
+  background-color: #fff;
+  z-index: 999;
+}
+.footer-bar .footer {
+  position: relative;
+  height: 2rem;
+}
+.footer-bar .footer a {
+  display: block;
+  float: left;
+  text-align: center;
+}
+.footer-bar .footer .kefu {
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  font-size: 0.6rem;
+  color: #666;
+}
+.footer-bar .footer .kefu i {
+  display: block;
+  font-size: 0.8rem;
+}
+.footer-bar .footer .join-cart {
+  width: 35%;
+  height: 100%;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: #ed8f03;
+}
+.footer-bar .footer .buy {
+  width: 40%;
+  height: 100%;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: #ef2b67;
+}
+.footer-bar .footer .shopcart {
+  display: block;
+  position: absolute;
+  bottom: 4rem;
+  right: 0.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: #7f7f7f;
+  z-index: 9;
+  opacity: 0.8;
+}
+.footer-bar .footer .shopcart img {
+  width: 1.2rem;
+  margin: 0.6rem;
+}

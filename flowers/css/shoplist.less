@@ -1,0 +1,161 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #fff;
+}
+@baseFont:50;
+// 设置头部
+.top-bar{
+    background-color: black;
+    .top:extend(.w) {
+        display: flex;
+        height: 100rem / @baseFont;
+        line-height: 100rem / @baseFont;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 40rem / @baseFont;
+            color: #fff;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 30rem / @baseFont;
+
+            i {
+                font-size: 50rem / @baseFont;
+                vertical-align: -12rem / @baseFont;
+            }
+        }
+    }
+}
+// banner
+.banner-bar{
+    .banner{
+        .header:extend(.w){
+            height: 100rem / @baseFont;
+            line-height: 100rem / @baseFont;
+            a{
+                display: inline-block;
+                width: 160rem / @baseFont;
+                height: 100%;
+                line-height: 100rem / @baseFont;
+                font-size: 30rem / @baseFont;
+                color: #000;
+                text-align: center;
+            }
+            .current{
+                color: #ff6600;
+            }
+            .order{
+                position: relative;
+            }
+            .order::before{
+                position: absolute;
+                top: 35rem / @baseFont;
+                right: 30rem / @baseFont;
+                content: '';
+                width: 0;
+                height: 0;
+                border: 6rem / @baseFont solid transparent;
+                border-bottom-color: black;
+            }
+            .order::after{
+                position: absolute;
+                top: 55rem / @baseFont;
+                right: 30rem / @baseFont;
+                content: '';
+                width: 0;
+                height: 0;
+                border: 6rem / @baseFont solid transparent;
+                border-top-color: black;
+            }
+        }
+        ul{
+            li{
+                height: 200rem / @baseFont;
+                border-top: 1px solid #f0f0f0;
+                .shop:extend(.w){
+                    position: relative;
+                    .img{
+                        float: left;
+                        width: 25%;
+                        img{
+                            margin-top: 30rem /@baseFont;
+                            width: 140rem / @baseFont;
+                        }
+                    }
+                    .shop-info{
+                        float: left;
+                        width: 75%;
+                        margin-top: 30rem /@baseFont;
+                        .huaming{
+                            font-size: 30rem / @baseFont;
+                            font-weight: bold;
+                            color: #000;
+                        }
+                        .price{
+                            color: #ff6600;
+                            font-size: 30rem / @baseFont;
+                            font-weight: bold;
+                            .hl{
+                                font-size: 35rem / @baseFont;
+                            }
+
+                        }
+                        .shop-count{
+                            font-size: 25rem / @baseFont;
+                            color: #666;
+
+                            span{
+                                margin-right: 50rem / @baseFont;
+                            }
+                        }
+                    }
+                    .shop-cart{
+                        position: absolute;
+                        right: 0;
+                        bottom: 30rem / @baseFont;
+                        font-size: 50rem / @baseFont;
+                        color: #ef2b67;
+                    }
+                }
+            }
+        }
+    }
+}
+// footer
+.footer-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 9999;
+    .footer:extend(.w){
+        height: 140rem / @baseFont ;
+        padding-top: 20rem / @baseFont;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li {
+                a{
+                    font-size: 30rem / @baseFont ;    
+                    color: #7f7f7f;
+                    text-align: center;
+                    i{
+                        display: block;
+                        font-size: 50rem / @baseFont;
+                    }
+                }
+            }
+        }
+        ul>li:nth-child(2) a{
+            color: #ef2b67;
+        }
+    }
+}
